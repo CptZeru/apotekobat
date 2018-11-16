@@ -1,7 +1,7 @@
 @extends('master')
 @section('content')
 <div class="container">
-  <form method="post" action="{{url('crud')}}">
+  <form method="post" action="{{ route('obat.store') }}">
     <div class="form-group row">
       {{csrf_field()}}
       <label for="obat" class="col-sm-2 col-form-label col-form-label-lg">Nama Obat</label>
